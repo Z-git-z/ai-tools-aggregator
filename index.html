@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具聚合 - 发现最佳人工智能工具</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="AI Tools Hub">
+                <h1>AI工具聚合</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#featured">精选工具</a></li>
+                    <li><a href="#categories">分类浏览</a></li>
+                    <li><a href="#new">最新上线</a></li>
+                    <li><a href="#about">关于我们</a></li>
+                </ul>
+            </nav>
+            <div class="search-box">
+                <input type="text" placeholder="搜索AI工具...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>探索最强大的人工智能工具</h2>
+            <p>超过100种AI工具，助力您的工作、学习和创作</p>
+            <div class="cta-buttons">
+                <a href="#featured" class="btn primary">开始探索</a>
+                <a href="#new" class="btn secondary">最新工具</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured-tools">
+        <div class="container">
+            <h2 class="section-title">精选AI工具</h2>
+            <div class="tools-grid" id="featured-tools">
+                <!-- 精选工具将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">按类别浏览</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="text">
+                    <i class="fas fa-font"></i>
+                    <h3>文本生成</h3>
+                    <p>写作助手、内容创作、摘要生成等</p>
+                </div>
+                <div class="category-card" data-category="image">
+                    <i class="fas fa-image"></i>
+                    <h3>图像生成</h3>
+                    <p>AI绘图、照片增强、艺术创作等</p>
+                </div>
+                <div class="category-card" data-category="video">
+                    <i class="fas fa-video"></i>
+                    <h3>视频处理</h3>
+                    <p>视频编辑、生成、特效等</p>
+                </div>
+                <div class="category-card" data-category="audio">
+                    <i class="fas fa-music"></i>
+                    <h3>音频处理</h3>
+                    <p>语音合成、音乐生成、音频编辑等</p>
+                </div>
+                <div class="category-card" data-category="code">
+                    <i class="fas fa-code"></i>
+                    <h3>编程辅助</h3>
+                    <p>代码生成、调试、解释等</p>
+                </div>
+                <div class="category-card" data-category="productivity">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>工作效率</h3>
+                    <p>会议记录、邮件助手、日程管理等</p>
+                </div>
+                <div class="category-card" data-category="marketing">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>营销工具</h3>
+                    <p>广告生成、SEO优化、社交媒体等</p>
+                </div>
+                <div class="category-card" data-category="education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>教育学习</h3>
+                    <p>语言学习、教学辅助、知识问答等</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="all-tools" class="all-tools">
+        <div class="container">
+            <h2 class="section-title">所有AI工具</h2>
+            <div class="filter-controls">
+                <select id="category-filter">
+                    <option value="all">所有类别</option>
+                    <option value="text">文本生成</option>
+                    <option value="image">图像生成</option>
+                    <option value="video">视频处理</option>
+                    <option value="audio">音频处理</option>
+                    <option value="code">编程辅助</option>
+                    <option value="productivity">工作效率</option>
+                    <option value="marketing">营销工具</option>
+                    <option value="education">教育学习</option>
+                </select>
+                <select id="price-filter">
+                    <option value="all">所有价格</option>
+                    <option value="free">免费</option>
+                    <option value="freemium">免费增值</option>
+                    <option value="paid">付费</option>
+                </select>
+                <input type="text" id="search-tools" placeholder="搜索工具...">
+            </div>
+            <div class="tools-grid" id="all-tools-grid">
+                <!-- 所有工具将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="new" class="new-tools">
+        <div class="container">
+            <h2 class="section-title">最新上线</h2>
+            <div class="tools-grid" id="new-tools">
+                <!-- 最新工具将通过JavaScript动态加载 -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">关于AI工具聚合</h2>
+            <div class="about-content">
+                <p>AI工具聚合是一个致力于收集和展示最新、最实用人工智能工具的网站。我们的目标是帮助用户发现最适合他们需求的AI解决方案。</p>
+                <p>网站目前收录了超过100种AI工具，涵盖文本、图像、视频、音频、编程、生产力等多个领域。我们会定期更新工具库，确保您能获取最新的AI技术信息。</p>
+                <p>如果您有推荐的AI工具或对我们的网站有任何建议，欢迎通过以下方式联系我们。</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>AI工具聚合</h3>
+                    <p>发现最佳人工智能工具</p>
+                    <p>&copy; 2023 AI工具聚合. 保留所有权利.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#featured">精选工具</a></li>
+                        <li><a href="#categories">分类浏览</a></li>
+                        <li><a href="#new">最新上线</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>类别</h3>
+                    <ul>
+                        <li><a href="#" data-category="text">文本生成</a></li>
+                        <li><a href="#" data-category="image">图像生成</a></li>
+                        <li><a href="#" data-category="video">视频处理</a></li>
+                        <li><a href="#" data-category="audio">音频处理</a></li>
+                        <li><a href="#" data-category="code">编程辅助</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>订阅更新</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="您的邮箱地址">
+                        <button type="submit">订阅</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
